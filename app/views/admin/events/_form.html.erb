@@ -27,6 +27,11 @@
   </div>
   
   <div class="field">
+    <%=form.label :image,"ユーザー画像" %>
+    <%= form.file_field :image, id: :event_image %>
+  </div>
+
+  <div class="field">
     <%= form.label :ticket_quantity %>
     <%= form.text_field :ticket_quantity, id: :event_ticket_quantity %>
   </div>

@@ -1,5 +1,7 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.all
-  end
+    @events = Event.page(params[:page]).per(2).order(:id)
+  end 
+  
+  
 end
